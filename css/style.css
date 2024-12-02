@@ -119,22 +119,76 @@ nav .nav-search label {
 }
 
 
+/* hero */
+.hero {
+    background-image: url(/assets/img/hero.jpg);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
-/* 
-laptop max 1200
-tablet mulai 768
-hp 
+.hero .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+}
 
-max 1200
-max 768
-max 450
+.hero .content .content-left {
+    width: 400px;
+    margin-left: 10%;
+    
+}
 
-*/
+
+.hero .content .content-left h1 {
+    font-size: 40px;
+}
+
+.hero .content .content-left p {
+    padding: 16px 0;
+}
+
+.hero .content .content-left button {
+    padding: 12px 24px;
+    background-color: var(--slate-900);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero .content .content-left button:hover {
+    background-color: #eaeaea;
+    color: var(--slate-900);
+}
+
+.hero .content .hero-img {
+    display: flex;
+}
+
+.hero .content .content-right img {
+    width: 500px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+}
+
+
+
+
 /* Media Queri */
 
 /* laptop 1200px */
 @media (max-width: 1200px) {
-    
+    .hero .content .content-right img {
+        width: 400px;
+    }
 }
 
 
@@ -179,6 +233,25 @@ max 450
         transform: scaleX(0.5);
         border-bottom: 1px solid #010101;
     }
+
+    .hero .content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: 600px;
+    }
+
+    .hero .content .content-left {
+        width: 500px;
+        color: var(--slate-900);
+        text-shadow: 0 0 3px #ffffff;
+    }
+
+    .hero .content .content-right img {
+        width: 400px;
+        
+    }
 }
 
 
@@ -186,5 +259,10 @@ max 450
 @media (max-width: 450px) {
     nav {
         padding: 12px 5%;
+    }
+
+    .hero .content .content-right img {
+        width: 300px;
+        
     }
 }
