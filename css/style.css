@@ -180,6 +180,72 @@ nav .nav-search label {
 }
 
 
+/* product */
+.product {
+    padding: 24px 7%;
+}
+
+.product h2 {
+    text-align: center;
+}
+
+.product .product-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.product .product-button button.active {
+    border-bottom: 3px solid #ffffff;
+}
+
+.product .product-button button {
+    padding: 8px 16px;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.product .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.product .row img {
+    width: 300px;
+    cursor: pointer;
+}
+
+.product .row .product-card {
+    width: 300px;
+}
+
+.product .row .product-card h3 {
+    font-size: 16px;
+    /* max-width: 80%; */
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Media Queri */
