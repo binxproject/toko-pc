@@ -183,6 +183,7 @@ nav .nav-search label {
 /* product */
 .product {
     padding: 24px 7%;
+    /* margin: 0 auto; */
 }
 
 .product h2 {
@@ -207,13 +208,19 @@ nav .nav-search label {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .product .row {
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
+}
+
+.product .row.active {
+    display: flex;
 }
 
 .product .row img {
@@ -330,5 +337,13 @@ nav .nav-search label {
     .hero .content .content-right img {
         width: 300px;
         
+    }
+
+    .product .row {
+        justify-content: center;
+    }
+
+    .product .product-button {
+        gap: 0;
     }
 }

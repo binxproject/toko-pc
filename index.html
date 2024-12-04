@@ -66,14 +66,15 @@
     <section class="product">
         <h2>Product</h2>
         <div class="product-button">
-            <button type="button" class="active">Processor</button>
-            <button type="button">Motherboard</button>
-            <button type="button">Ram</button>
-            <button type="button">Storage</button>
-            <button type="button" >Vga</button>
+            <button type="button" data-target="processor" class="active">Processor</button>
+            <button type="button" data-target="motherboard">Motherboard</button>
+            <button type="button" data-target="ram">Ram</button>
+            <button type="button" data-target="storage">Storage</button>
+            <button type="button" data-target="vga">Vga</button>
         </div>
 
-        <div class="row">
+        <!-- processor start -->
+        <div class="row active" data-category="processor">
             <div class="product-card">
                 <img src="/assets/img/product/processor/ryzen-3-3200g.jpg" alt="Ryzen 3 3200G">
                 <h3>AMD Ryzen 3 3200G</h3>
@@ -115,9 +116,10 @@
                 <p>IDR 1.000.000K</p>
             </div>
         </div>
+        <!-- processor end -->
 
         <!-- motherboard -->
-        <div class="row">
+        <div class="row" data-category="motherboard">
             <div class="product-card">
                 <img src="/assets/img/product/motherboard/asrock-a520m-hvs.jpg" alt="ASRock A520M HVS">
                 <h3>ASRock A520M HVS</h3>
@@ -162,7 +164,7 @@
         <!-- motherboard end -->
 
         <!-- ram start -->
-        <div class="row">
+        <div class="row" data-category="ram">
             <div class="product-card">
                 <img src="/assets/img/product/ram/corsair-vengeance-lpx-ddr4-2666mhz-8gb.jpg" alt="Corsair Vengeance LPX DDR4 2666Mhz 8gb">
                 <h3>Corsair Vengeance LPX DDR4 2666Mhz 8gb</h3>
@@ -207,8 +209,7 @@
         <!-- ram end -->
 
         <!-- storage start -->
-
-        <div class="row">
+        <div class="row" data-category="storage">
             <div class="product-card">
                 <img src="/assets/img/product/storage/adata-su650-480gb.jpg" alt="Adata SU650 480gb">
                 <h3>Adata SU650 480gb</h3>
@@ -253,45 +254,45 @@
         <!-- storage end -->
 
         <!-- vga start -->
-        <div class="row">
+        <div class="row" data-category="vga">
             <div class="product-card">
-                <img src="/assets/img/product/vga/colorful-gtx-1050ti-nb-4gb-ddr5.jpg" alt="Colorful GTX 1050ti 4gb DDR5">
-                <h3>Colorful GTX 1050ti 4gb DDR5</h3>
+                <img src="/assets/img/product/vga/asus-dual-rtx-3050-oc-6gb-gddr6.jpg" alt="Asus Dual RTX 3050 OC 6gb GDDR6">
+                <h3>Asus Dual RTX 3050 OC 6gb GDDR6</h3>
                 <p>IDR 1.000.000K</p>
             </div>
             <div class="product-card">
-                <img src="/assets/img/product/vga/galax-gtx-1650-4gb-gddr6.jpg" alt="Galax GTX 1650 4gb GDDR6">
-                <h3>Galax GTX 1650 4gb GDDR6</h3>
+                <img src="/assets/img/product/vga/asus-dual-rtx-3060-oc-white-edition-8gb-gddr6.jpg" alt="Asus Dual RTX 3060 OC White Edition 8gb GDDR6">
+                <h3>Asus Dual RTX 3060 OC White Edition 8gb GDDR6</h3>
                 <p>IDR 1.000.000K</p>
             </div>
             <div class="product-card">
-                <img src="/assets/img/product/vga/gigabyte-gtx-1650-4gb-ddr6.png" alt="Gigabyte GTX 1650 4gb GDDR6">
-                <h3>Gigabyte GTX 1650 4gb GDDR6</h3>
+                <img src="/assets/img/product/vga/colorful-gt-1030-2gb-gddr5.jpg" alt="Colorful GT 1030 2gb GDDR5">
+                <h3>Colorful GT 1030 2gb GDDR5</h3>
                 <p>IDR 1.000.000K</p>
             </div>
             <div class="product-card">
-                <img src="/assets/img/product/vga/zotac-gtx-1650-amp-core-4gb-gddr6.jpg" alt="Zotac GTX 1650 AMP Core 4gb GDDR6">
-                <h3>Zotac GTX 1650 AMP Core 4gb GDDR6</h3>
+                <img src="/assets/img/product/vga/colorful-gtx-1650-4gb-gddr6.jpg" alt="Colorful GTX 1650 4gb GDDR6">
+                <h3>Colorful GTX 1650 4gb GDDR6</h3>
                 <p>IDR 1.000.000K</p>
             </div>
             <div class="product-card">
-                <img src="/assets/img/product/vga/palit-rtx-3050-stormx-6gb-gddr6.jpg" alt="Palit RTX 3050 Stormx 6gb GDDR6">
-                <h3>Palit RTX 3050 Stormx 6gb GDDR6</h3>
+                <img src="/assets/img/product/vga/colorful-rtx-3060-duo-nb-12gb-gddr6.jpg" alt="Colorful RTX 3060 Duo NB 12gb GDDR6">
+                <h3>Colorful RTX 3060 Duo NB 12gb GDDR6</h3>
                 <p>IDR 1.000.000K</p>
             </div>
             <div class="product-card">
-                <img src="/assets/img/product/vga/zotac-rtx-3050-solo-6gb-gddr6.jpg" alt="Zotac RTX 3050 Solo 6gb GDDR6">
-                <h3>Zotac RTX 3050 Solo 6gb GDDR6</h3>
+                <img src="/assets/img/product/vga/msi-gt-1030-4gb-ddr4.jpg" alt="MSI GT 1030 4gb DDR4">
+                <h3>MSI GT 1030 4gb DDR4</h3>
                 <p>IDR 1.000.000K</p>
             </div>
             <div class="product-card">
-                <img src="/assets/img/product/vga/asus-dual-rtx-3060-oc-8gb-gddr6-white-edition.jpg" alt="Asus Dual RTX 3060 OC 8gb GDDR6 White Edition">
-                <h3>Asus Dual RTX 3060 OC 8gb GDDR6 White Edition</h3>
+                <img src="/assets/img/product/vga/msi-gtx-1650-ventus-xs-oc-v3-4gb-gddr6.jpg" alt="MSI GTX 1650 Ventus XS OC v3 4gb GDDR6">
+                <h3>MSI GTX 1650 Ventus XS OC v3 4gb GDDR6</h3>
                 <p>IDR 1.000.000K</p>
             </div>
             <div class="product-card">
-                <img src="/assets/img/product/vga/palit-rtx-4060-infinity-2-8gb-gddr6.jpg" alt="Palit RTX 4060 Infinity 2 8gb GDDR6">
-                <h3>Palit RTX 4060 Infinity 2 8gb GDDR6</h3>
+                <img src="/assets/img/product/vga/msi-rtx-3050-ventus-2x-xs-oc-8gb-gddr6.jpg" alt="MSI RTX 3050 Ventus 2X XS OC 8gb GDDR6">
+                <h3>MSI RTX 3050 Ventus 2X XS OC 8gb GDDR6</h3>
                 <p>IDR 1.000.000K</p>
             </div>
         </div>

@@ -25,5 +25,29 @@ document.addEventListener('click', function(e) {
     }
 })
 
+// item product klik untuk menampilkan
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".product-button button");
+    const rows = document.querySelectorAll(".row");
 
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            // Hapus kelas 'active' dari semua tombol
+            buttons.forEach(btn => btn.classList.remove("active"));
+            // Tambahkan kelas 'active' ke tombol yang diklik
+            button.classList.add("active");
+
+            const target = button.getAttribute("data-target");
+
+            // Tampilkan hanya row yang sesuai dengan target
+            rows.forEach(row => {
+                if (row.getAttribute("data-category") === target) {
+                    row.style.display = "flex";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        });
+    });
+});
 
