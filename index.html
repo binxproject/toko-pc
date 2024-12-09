@@ -75,12 +75,16 @@
 
         <!-- processor start -->
         <div class="row active" data-category="processor">
-            <div class="product-card">
-                <img src="/assets/img/product/processor/ryzen-3-3200g.jpg" alt="Ryzen 3 3200G">
+            <div class="product-card" data-id="1">
+                <a  class="open-modal">
+                    <img src="/assets/img/product/processor/ryzen-3-3200g.jpg" alt="Ryzen 3 3200G">
+                </a>
+                
                 <h3>AMD Ryzen 3 3200G</h3>
                 <p>IDR 1.000.000K</p>
+                
             </div>
-            <div class="product-card">
+            <div class="product-card" data-id="2">
                 <img src="/assets/img/product/processor/ryzen-3-4100.jpg" alt="Ryzen 3 4100">
                 <h3>AMD Ryzen 3 4100</h3>
                 <p>IDR 1.000.000K</p>
@@ -299,6 +303,50 @@
         <!-- vga end -->
     </section>
     <!-- product end -->
+
+
+    <!-- modal start -->
+    <div class="modal" id="modal-1">
+        <div class="modal-content">
+            <button type="button" class="btn-close-modal"><i class="fa-solid fa-circle-xmark"></i></button>
+            <div class="modal-wrap-left">
+                <img src="/assets/img/product/processor/ryzen-3-3200g.jpg" alt="Ryzen 3 3200G">
+                <button type="button" class="btn-add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+               
+            </div>
+            
+            <div class="modal-wrap">
+                <h3>Ryzen 3 3200G</h3>
+                <p>Garansi Distributor Resmi Indonesia (NJT/EMD) 3 Tahun <br> <br>
+
+                    Processor Name : AMD Ryzen 3 3200G 3.6Ghz Up To 4.0Ghz Cache 4MB 65W AM4 [Box] - 4 Core - YD3200C5FHBOX - With AMD Wraith Stealth Cooler <br>
+                    Brand : AMD <br>
+                    CPU Socket Type : AM4 <br>
+                    Processors Generation : 2nd Gen Ryzen <br>
+                    Cores : 4 <br>
+                    Threads : 4 <br>
+                    Operating Frequency : 3.6Ghz <br>
+                    Max Turbo Frequency : 4.0Ghz <br>
+                    Cache : 4 MB <br>
+                    Manufacturing Tech : 12 nm FinFET <br>
+                    Integrated Graphics : <br>
+                    Thermal Design Power : 45-65 W <br>
+                    Thermal Solution (Cooler) : Included</p>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+    <!-- <div class="modal" id="modal-2">
+        <div class="modal-content">
+            <span>&times;</span>
+            <h3>Item 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, enim.</p>
+        </div>
+    </div> -->
+    <!-- modal end -->
 
     <script src="js/script.js"></script>
 </body>

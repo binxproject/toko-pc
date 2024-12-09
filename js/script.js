@@ -51,3 +51,40 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+// modal
+document.addEventListener("DOMContentLoaded", () => {
+    const openModals = document.querySelectorAll('.open-modal');
+    const closeModals = document.querySelectorAll('.btn-close-modal');
+    const modals = document.querySelectorAll('.modal');
+
+    // Fungsi untuk membuka modal
+    openModals.forEach(button => {
+        button.addEventListener('click', () => {
+            const parent = button.closest('.product-card');
+            const itemId = parent.getAttribute('data-id'); // Ambil data-id produk
+            const modal = document.querySelector(`#modal-${itemId}`); // Cari modal berdasarkan ID
+
+            if (modal) {
+                modal.style.display = 'flex'; // Tampilkan modal
+            }
+        });
+    });
+
+    // Fungsi untuk menutup modal
+    closeModals.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = button.closest('.modal');
+            modal.style.display = 'none'; // Sembunyikan modal
+        });
+    });
+
+    // Menutup modal jika klik di luar konten modal
+    modals.forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+});

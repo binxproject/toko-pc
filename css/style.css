@@ -1,6 +1,8 @@
 :root {
     --slate-800: #1e293b;
     --slate-900: #0f172a;
+    --green-600: #16a34a;
+    --green-700: #15803d;
 }
 
 html, body, * {
@@ -156,7 +158,7 @@ nav .nav-search label {
 
 .hero .content .content-left button {
     padding: 12px 24px;
-    background-color: var(--slate-900);
+    background-color: var(--green-600);
     color: #ffffff;
     font-weight: bold;
     font-size: 16px;
@@ -166,8 +168,8 @@ nav .nav-search label {
 }
 
 .hero .content .content-left button:hover {
-    background-color: #eaeaea;
-    color: var(--slate-900);
+    background-color: var(--green-700);
+    color: #ffffff;
 }
 
 .hero .content .hero-img {
@@ -240,7 +242,92 @@ nav .nav-search label {
     text-overflow: ellipsis; */
 }
 
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+   
+    
+}
 
+@keyframes animateModal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.modal .modal-content {
+    position: relative;
+    background-color: #ffffff;
+    color: var(--slate-900);
+    margin: 15% auto;
+    width: 50%;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    overflow-y: scroll;
+    animation: animateModal 0.3s;
+}
+
+.modal .modal-content .btn-close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    color: var(--slate-900);
+    background-color: transparent;
+    margin-right: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.modal .modal-content .btn-close-modal:hover {
+    color: red;
+}
+
+
+.modal .modal-content img {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.modal .modal-content .modal-wrap-left {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.modal .modal-content .modal-wrap-left .btn-add-to-cart {
+    font-size: 20px;
+    background-color: var(--green-600);
+    color: #ffffff;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.modal .modal-content .modal-wrap-left .btn-add-to-cart:hover {
+    background-color: var(--green-700);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.modal .modal-content .modal-wrap {
+    /* display: flex; */
+}
 
 
 
@@ -262,6 +349,18 @@ nav .nav-search label {
     .hero .content .content-right img {
         width: 400px;
     }
+
+    .modal .modal-content {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .modal .modal-content img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+
 }
 
 
@@ -325,6 +424,10 @@ nav .nav-search label {
         width: 400px;
         
     }
+
+    .modal .modal-content {
+        width: 70%;
+    }
 }
 
 
@@ -345,5 +448,14 @@ nav .nav-search label {
 
     .product .product-button {
         gap: 0;
+    }
+
+    .modal .modal-content {
+        width: 80%;
+    }
+
+    .modal .modal-content img {
+        width: 200px;
+        height: 200px;
     }
 }
