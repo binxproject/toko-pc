@@ -124,6 +124,7 @@ nav .nav-search label {
 /* hero */
 .hero {
     background-image: url(/assets/img/hero.jpg);
+    
     display: flex;
     align-items: center;
     min-height: 100vh;
